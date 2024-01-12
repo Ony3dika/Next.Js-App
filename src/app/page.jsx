@@ -5,17 +5,17 @@ export default function Home() {
   return (
     <main className='h-fit md:mt-20 mt-10 md:flex '>
       <section>
-        <h1 className='md:text-8xl text-center lg:text-start text-5xl font-black text-copy leading-snug'>
+        <h1 className='md:text-8xl text-center md:text-start text-5xl font-black text-copy leading-snug'>
           Creative <br /> Thoughts <br /> Agency
         </h1>
 
-        <p className='mt-5 lg:mt-10 text-lg text-center lg:text-start lg:text-xl text-copy-lighter'>
+        <p className='mt-5 lg:mt-10 text-lg text-center md:text-start lg:text-xl text-copy-lighter'>
           {" "}
           Where Innovation Meets Impact. Elevate Your Brand with Creative Web
           Solutions.{" "}
         </p>
 
-        <div className='flex'>
+        <div className='flex items-center md:justify-start justify-center'>
           <button className='py-3 px-5 rounded-lg font-bold mt-5 bg-primary-dark/50 text-copy'>
             Learn More
           </button>
