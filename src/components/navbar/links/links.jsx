@@ -19,7 +19,7 @@ const links = [
   },
 ];
 
-const Links = () => {
+const Links = (props) => {
 
   const session = true;
   const isAdmin = true;

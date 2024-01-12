@@ -8,6 +8,10 @@ import { IoCloseOutline } from "react-icons/io5";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
+  const close=()=>{
+    setOpen(false)
+  }
+
   return (
     <div className='px-5 lg:py-0 lg:h-14 py-3 flex items-center md:mt-8 mt-5 rounded-lg lg:rounded-none text-copy-light'>
       <div className='basis-1/5'>

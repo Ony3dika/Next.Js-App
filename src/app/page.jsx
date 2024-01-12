@@ -30,7 +30,7 @@ export default function Home() {
       </section>
 
       <section className='basis-1/2 flex items-center justify-center h-96 mt-5 md:mt-0 md:h-auto '>
-        <Image src='/contact.png' alt='hero' height={100} width={500} />
+        <Image src='/create.png' alt='hero' height={500} width={1000} />
       </section>
     </main>
   );

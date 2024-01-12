@@ -11,5 +11,17 @@
   background-image: url(../../public/und.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  /* background-attachment: fixed; */
   background-position: center center;
+}
+
+.noise{
+  background-image: url(../../public/nnnoise.svg);
+}
+
+.chaos{
+  background-image: url(../../public/chaos.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: rotate duration timing-function delay iteration-count direction fill-mode;
 }
