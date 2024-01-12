@@ -1,9 +1,13 @@
+import Image from 'next/image'
 import React from 'react'
 
-const Adminpage = () => {
+const About = () => {
   return (
-    <div>Adminpage</div>
+    <div>
+
+      {/* <Image src="/wave.png" alt='wave' fill/> */}
+    </div>
   )
 }
 
-export default Adminpage
+export default About

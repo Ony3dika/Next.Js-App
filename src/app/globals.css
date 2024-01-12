@@ -3,3 +3,13 @@
 @tailwind utilities;
 
 
+.font { 
+  font-family: var(--sand);
+}
+
+.pattern{
+  background-image: url(../../public/und.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
