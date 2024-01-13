@@ -1,4 +1,4 @@
-import { Quicksand} from "next/font/google";
+import { Jost } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/footer";
@@ -7,11 +7,12 @@ import Footer from "@/components/footer/footer";
   rel='stylesheet'
 ></link>;
 
-const font1 = Quicksand({
-  subsets:["latin"],
-  weight:"400",
-  variable:"--sand"
-})
+const font1 = Jost({
+  subsets: ["latin"],
+  weight: ["400","500", "600", "900"],
+  display: "swap",
+  variable: "--sand",
+});
 
 export const metadata = {
   title: "CodeVista",

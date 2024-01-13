@@ -9,7 +9,7 @@ const About = () => {
           About Agency
         </h1>
 
-        <p className='mt-5 md:mt-10 md:text-5xl text-3xl font-black text-copy'>
+        <p className='mt-5 md:mt-10 md:leading-[3.5rem] md:text-5xl text-3xl font-black text-copy'>
           We create digital ideas <br /> that are bigger, bolder, <br /> braver
           and better.
         </p>
@@ -26,7 +26,7 @@ const About = () => {
             <h1 className='md:text-3xl text-xl font-black text-primary-light '>
               10+
             </h1>
-            <p className='text-copy-lighter md:text-lg text-xs'>
+            <p className='text-copy-lighter lg:text-lg text-xs'>
               Year of experience
             </p>
           </div>
@@ -35,7 +35,7 @@ const About = () => {
             <h1 className='md:text-3xl text-xl font-black text-primary-light '>
               234 K+
             </h1>
-            <p className='text-copy-lighter md:text-lg text-xs'>
+            <p className='text-copy-lighter lg:text-lg text-xs'>
               People reached
             </p>
           </div>
@@ -44,13 +44,11 @@ const About = () => {
             <h1 className='md:text-3xl text-xl font-black text-primary-light '>
               5 K+
             </h1>
-            <p className='text-copy-lighter md:text-lg text-xs'>
+            <p className='text-copy-lighter lg:text-lg text-xs'>
               Services and Plugins
             </p>
           </div>
         </div>
-
-        lorem500
       </section>
 
       <section className='basis-1/2 flex items-center justify-center h-96 mt-5 md:mt-0 md:h-auto '>

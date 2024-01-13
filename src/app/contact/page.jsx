@@ -15,29 +15,29 @@ const ContactPage = () => {
         <form action=''>
           <input
             type='text'
-            className='w-full my-2 py-3 px-4 rounded bg-foreground/70 outline-none text-copy-light border-border border-[1px]'
+            className='w-full my-2 py-2 px-4 rounded bg-foreground/70 outline-none text-copy-light border-border border-[1px]'
             placeholder='FirstName & LastName'
           />
 
           <input
             type='email'
-            className='w-full my-2 py-3 px-4 rounded bg-foreground/70 outline-none text-copy-light border-border border-[1px]'
+            className='w-full my-2 py-2 px-4 rounded bg-foreground/70 outline-none text-copy-light border-border border-[1px]'
             placeholder='Email Address'
           />
 
           <input
             type='text'
-            className='w-full my-2 py-3 px-4 rounded bg-foreground/70 outline-none text-copy-light border-border border-[1px]'
+            className='w-full my-2 py-2 px-4 rounded bg-foreground/70 outline-none text-copy-light border-border border-[1px]'
             placeholder='Phone Number'
           />
 
           <textarea
-            className='w-full my-2 py-3 px-4 rounded bg-foreground/70 outline-none text-copy-light border-border border-[1px] resize-none'
+            className='w-full my-2 py-2 px-4 rounded bg-foreground/70 outline-none text-copy-light border-border border-[1px] resize-none'
             placeholder='Message'
             rows='7'
           ></textarea>
 
-          <button className='w-full mt-3 py-3 px-4 rounded bg-primary-dark text-copy-light font-black text-lg '>
+          <button className='w-full mt-2 py-3 px-4 rounded bg-primary-dark text-copy-light font-black text-lg '>
             Send
           </button>
         </form>

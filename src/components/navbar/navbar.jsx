@@ -1,19 +1,36 @@
 "use client";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Links from "./links/links";
-import Link from "next/link"
+import Link from "next/link";
 import { CgMenuGridO } from "react-icons/cg";
 import { IoCloseOutline } from "react-icons/io5";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
-  const close=()=>{
-    setOpen(false)
-  }
+   const [isScrolled, setIsScrolled] = useState(false);
+
+   const handleScroll = () => {
+     const scrollPosition = window.scrollY;
+     // Adjust the scroll threshold as needed
+     setIsScrolled(scrollPosition > 100);
+   };
+
+   useEffect(() => {
+     window.addEventListener("scroll", handleScroll);
+     return () => {
+       window.removeEventListener("scroll", handleScroll);
+     };
+   }, []);
 
   return (
-    <div className='px-5 lg:py-0 lg:h-14 py-3 flex items-center md:mt-8 mt-5 rounded-lg lg:rounded-none text-copy-light'>
+    <div
+      className={`px-5 lg:h-14 sticky md:top-8 top-5 transition-all duration-500 ease-linear flex items-center  text-copy-light ${
+        isScrolled
+          ? "bg-background py-3 rounded-lg lg:rounded-full"
+          : "py-3 lg:py-0 lg:rounded-none"
+      }`}
+    >
       <div className='basis-1/5'>
         <Link href='/' className='font-black text-md lg:text-2xl'>
           CodeVista
@@ -30,7 +47,7 @@ const Navbar = () => {
       </div>
 
       <section
-        className={`fixed lg:hidden transition-all duration-200 ease-linear top-0 h-screen w-full rounded border-2 border-border bg-foreground ${
+        className={`fixed lg:hidden transition-all duration-200 ease-linear top-0 h-screen w-full rounded border-2 border-border bg-foreground mobilePattern ${
           open ? "right-0" : "right-[-100%]"
         }`}
       >

@@ -19,7 +19,7 @@ const links = [
   },
 ];
 
-const Links = (props) => {
+const Links = () => {
 
   const session = true;
   const isAdmin = true;
@@ -31,7 +31,7 @@ const Links = (props) => {
       {session ? (
         <>
           {isAdmin && <NavbarLink item={{ title: "Admin", path: "/admin" }} />}
-          <button className='bg-primary-dark lg:w-auto w-1/3 lg:my-0 my-5 mx-3 py-1.5 lg:py-1 rounded-full text-base lg:px-3'>
+          <button className='bg-primary-dark font-medium lg:w-auto w-1/3 lg:my-0 my-5 mx-3 py-1.5 lg:py-1 rounded-full text-base lg:px-3'>
             Logout
           </button>
         </>

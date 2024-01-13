@@ -24,12 +24,12 @@ export default function Home() {
           </button>
         </div>
 
-        <div className='grayscale mt-5 -z-10 relative  md:h-16 h-12 flex justify-center items-center lg:justify-start'>
+        <div className='grayscale-[5%] mt-5 -z-10 relative  md:h-16 h-12 flex justify-center items-center lg:justify-start'>
           <Image src='/brands.png' alt='brands' width={600} height={100} />
         </div>
       </section>
 
-      <section className='basis-1/2 flex items-center justify-center h-96 mt-5 md:mt-0 md:h-auto '>
+      <section className='basis-1/2 flex items-center justify-center h-96 md:h-auto'>
         <Image src='/create.png' alt='hero' height={500} width={1000} />
       </section>
     </main>
