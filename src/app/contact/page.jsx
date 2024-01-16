@@ -2,12 +2,16 @@ import React from "react";
 import Image from "next/image";
 
 const ContactPage = () => {
-
-  console.log("it works::")
   return (
     <main className='h-fit md:mt-20 mt-10 md:flex '>
       <section className='basis-1/2 flex items-center justify-center h-96 mt-5 md:mt-0 md:h-auto '>
-        <Image src='/contact.png' priority={true} alt='hero' height={100} width={500} />
+        <Image
+          src='/contact.png'
+          priority={true}
+          alt='hero'
+          height={100}
+          width={500}
+        />
       </section>
 
       <section className='basis-1/2'>
